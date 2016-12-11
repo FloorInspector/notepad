@@ -1,0 +1,19 @@
+body {
+  margin:0; padding:0;
+}
+
+#parent-container {
+  display: flex;
+}
+
+#parent-container>div {
+  padding:20px;
+}
+
+#left-menu {
+  flex-basis: 200px;
+}
+
+#main-content {
+  flex-grow: 1;
+}
