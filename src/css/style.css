@@ -1,19 +1,72 @@
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+/*@font-face {*/
+  /*font-family: 'Open Sans y2k';*/
+  /*src: url(../resources/OpenSans-Y2K.woff);*/
+/*}*/
+
 body {
   margin:0; padding:0;
+  font-family: Arial, serif;
 }
 
 #parent-container {
   display: flex;
+  height:100vh;
 }
 
 #parent-container>div {
-  padding:20px;
+  padding:0;
 }
 
 #left-menu {
-  flex-basis: 200px;
+  flex-basis: 350px;
+  background-color: #DDDDDD;
 }
 
 #main-content {
   flex-grow: 1;
+}
+
+.note-list {
+  padding:0;
+  margin:0
+}
+
+.note-list:first-child{
+  border-top: 1px solid #666;
+}
+.note-list li {
+  padding:0;
+  margin:0;
+  border-bottom:1px solid #666;
+  list-style: none;
+}
+
+.note-list li a {
+  display: block;
+  padding:10px;
+  text-decoration:none;
+  color: #444;
+}
+
+.note-view {
+  padding: 10px;
+}
+
+.note-view h2{
+  margin:0;
+}
+
+.note-meta{
+  margin: 0 0 30px 0;
+  font-size:0.8em;
+}
+
+.note-meta .label {
+}
+
+.note-meta .value{
+  font-weight: bold;
+  display: inline-block;
+  margin-right:20px;
 }

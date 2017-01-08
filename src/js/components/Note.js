@@ -1,17 +1,16 @@
 import React from 'react';
 
-class Note extends React.Component {
-  render() {
-
-    return (
-      <div>
-        <h2>note</h2>
-        <div>{this.props.params.key}</div>
+export default ({note}) => {
+  return (
+    <div className="note-view">
+      <h2>{note.subject}</h2>
+      <div className="note-meta">
+        <span className="label">Created: </span>
+        <span className="value">{new Date( note.created ).toDateString()}</span>
+        <span className="label">Last updated: </span>
+        <span className="value">{new Date( note.lastUpdated ).toDateString()}</span>
       </div>
-
-    )
-
-  }
+      <div>{note.body.text}</div>
+    </div>
+  )
 }
-
-export default Note;

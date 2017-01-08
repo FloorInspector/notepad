@@ -1,5 +1,6 @@
 import React from 'react';
 import FilteredNoteList from '../containers/FilteredNoteList';
+import NoteListHeader from './NoteListHeader'
 
 class Main extends React.Component {
 
@@ -12,11 +13,10 @@ class Main extends React.Component {
     return (
       <div id="parent-container">
         <div id="left-menu">
-          Notes
+          <NoteListHeader />
           <FilteredNoteList />
         </div>
         <div id="main-content">
-          main content
           {this.props.children}
         </div>
       </div>

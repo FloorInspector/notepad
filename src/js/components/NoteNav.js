@@ -10,7 +10,9 @@ class NoteNav extends React.Component  {
   render() {
     console.log(this.props.note)
     return (
-      <Link to={'/note/' + this.props.noteKey}>{this.props.note.subject}</Link>
+      <Link to={'/note/' + this.props.noteKey}>
+        {this.props.note.subject}
+      </Link>
     )
   }
 }

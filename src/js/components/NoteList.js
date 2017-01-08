@@ -10,8 +10,7 @@ export default ({ notes }) => {
 
   return (
     <div>
-      <div>Note list</div>
-      <ul>
+      <ul className="note-list">
         {noteItems}
       </ul>
     </div>
